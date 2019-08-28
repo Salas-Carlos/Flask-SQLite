@@ -17,6 +17,11 @@ def users():
   return t
 
 @app.route('/')
+def inicio():
+ 
+  return render_template('lista.html')
+
+@app.route('/users/list')
 def usersJ():
  
   lista=users()
