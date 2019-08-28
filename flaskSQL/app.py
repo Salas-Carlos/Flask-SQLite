@@ -22,7 +22,7 @@ def usersJ():
   lista=users()
   return render_template('index.html',lista=lista)
 
-@app.route('/users')
+@app.route('/api/v1/users')
 def usersJson():
   datos=[]
   lista=users()
